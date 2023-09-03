@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 exports = function() {
     const mongodb = context.services.get("mongodb-atlas");
     const itemsCollection = mongodb.db("Movie-api-db").collection("Movies");
-    // ... paste snippet here ...
+    
+    
     const query = { "titel": { "$gte": "Puss in Boots: The Last Wish" } };
     const projection = {
      "title": 1,
