@@ -1,16 +1,5 @@
 const mongoose = require("mongoose");
 
-// const MovieSchema = mongoose.Schema({
-//     tite:{
-//         type: String,
-//         require: true
-//     },
-// })
-
-// const Movie = mongoose.model("Movie",MovieSchema);
-// module.export = Movie ;
-
-
 exports = function() {
     const mongodb = context.services.get("mongodb-atlas");
     const itemsCollection = mongodb.db("Movie-api-db").collection("Movies");
